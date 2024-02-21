@@ -10,5 +10,5 @@ import { ToolbarComponent } from './core/shared/components/toolbar/toolbar.compo
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ng-comunel';
+  title = 'Comunel';
 }
