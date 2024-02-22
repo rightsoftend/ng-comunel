@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { InputComponent } from '../input/input.component';
 
 @Component({
@@ -9,7 +9,7 @@ import { InputComponent } from '../input/input.component';
   styleUrl: './group-inputs.component.scss'
 })
 export class GroupInputsComponent {
-  groupControls = {
-    label: "Телефон:"
-  }
+  @Input() groupTitle = '';
+  @Input() elementTitle = '';
+
 }

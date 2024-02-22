@@ -1,34 +1,16 @@
 // Styles for the input container
 .app-group-input {
+  width: 100%;
   position: relative;
   margin-bottom: 1rem;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 0 20px;
   border: solid 0.5px #eee;
-
-  // Styles for the input field
-//  input {
-//    width: 100%;
-//    padding: 0.8rem 0.5rem 0.5rem; // Adjust padding to create space for the label
-//    border: 1px solid #ccc;
-//    border-radius: 4px;
-//    background-color: #f9f9f9;
-//    font-size: 1rem;
-//    transition: border-color 0.3s ease;
-//
-//    &:focus {
-//      outline: none;
-//      border-color: #6c63ff;
-//
-//      + label {
-//        color: #6c63ff; // Change label color on input focus
-//      }
-//    }
-//  }
+  border-radius: 8px;
 
   // Styles for the label
   label {
     position: absolute;
-    top: -0.6rem; // Adjust top position of the label
+    top: -0.7rem; // Adjust top position of the label
     left: 0.8rem; // Adjust left position of the label
     padding: 0 0.2rem;
     background-color: #fff;
@@ -38,12 +20,17 @@
     pointer-events: none; // Prevent label from capturing clicks
   }
 
-  // Styles for the input field when it has a value
-  input:not(:placeholder-shown) + label,
-  input:focus + label {
-    top: -0.6rem; // Move label up on input value or focus
-    left: 0.5rem; // Adjust left position of the label when moved up
-    font-size: 0.7rem; // Reduce label font size when moved up
-    color: #6c63ff; // Change label color when moved up
+  .group-inputs-add-button {
+    position: absolute;
+    top: -0.7rem; 
+    left: 18rem; 
+    padding: 0 0.2rem;
+    background-color: #fff;
+    color: #999;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    pointer-events: none; // Prevent label from capturing clicks
   }
+
+
 }
