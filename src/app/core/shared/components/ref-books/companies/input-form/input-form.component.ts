@@ -24,20 +24,32 @@ export class InputFormComponent {
       label: 'Адреса для листування:'
     },
     lawAddress: {
-      label: 'Юридична адреса:'
+      label: 'Юридична адреса:',
     },
     iban: {
-      label: 'IBAN:'
+      label: 'IBAN:',
     },
     mfo: {
-      label: 'МФО:'
+      label: 'МФО:',
     },
     parlor: {
-      label: 'Особистий кабіінет:'
+      label: 'Особистий кабіінет:',
     },
     transmissionOfMetersData: {
-      label: 'Передача показів:'
+      label: 'Передача показів:',
     },
+    phones: {
+      groupTitle: 'Телефони',
+      label: 'Телефон',
+    },
+    socialNetworks: {
+      groupTitle: 'Соціальні мережі',
+      label: '',
+    },
+    chatBots: {
+      groupTitle: 'Чат боти:',
+      label: '',
+    }
   }
 }
 

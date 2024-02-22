@@ -1,4 +1,4 @@
-<div class="_company-input-form">
+<div class="company-input-form">
   <h2>Картка компанії</h2>
   <form action="">
     <app-input [caption]="formControls.fullName.label" />
@@ -8,42 +8,15 @@
     <app-input [caption]="formControls.lawAddress.label" />
     <app-input [caption]="formControls.iban.label" />
     <app-input [caption]="formControls.mfo.label" />
-    <app-group-inputs />
-
-
-    <div>
-      <div>
-        <label for="">Телефони:</label>
-        <input type="button" value="Додати">
-      </div>
-      <div>
-        <input type="text">
-      </div>
-    </div>
+    <app-group-inputs [groupTitle]="formControls.phones.groupTitle" [elementTitle]="formControls.phones.label"/>
     <app-input [caption]="formControls.parlor.label" />
     <app-input [caption]="formControls.transmissionOfMetersData.label" />
-    <div>
-      <div>
-        <label for="">Соціальні мережі:</label>
-        <input type="button" value="Додати">
-      </div>
-      <div>
-        <input type="text">
-      </div>
-    </div>
-    <div>
-      <div>
-        <label for="">Чат боти:</label>
-        <input type="button" value="Додати">
-      </div>
-      <div>
-        <input type="text">
-      </div>
-    </div>
-    <div>
-      <input type="button" value="Зберегти">
-      <input type="button" value="Закрити">
-      <input type="button" value="Очистити">
+    <app-group-inputs [groupTitle]="formControls.socialNetworks.groupTitle" [elementTitle]="formControls.socialNetworks.label"/>
+    <app-group-inputs [groupTitle]="formControls.chatBots.groupTitle" [elementTitle]="formControls.chatBots.label"/>
+    <div class="button-group">
+      <button type="button">Зберегти</button>
+      <button type="button">Закрити</button>
+      <button type="button">Очистити</button>
     </div>
   </form>
 </div>

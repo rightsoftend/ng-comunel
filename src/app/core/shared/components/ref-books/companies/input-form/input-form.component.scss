@@ -12,13 +12,15 @@
   opacity: 1;
 }
 
-
+app-input-form {
+  width: 100%;
+}
 // Example usage: Hide the form by default
 .company-input-form {
-  @include hide-element;
+  //@include hide-element;
 
   // Show the form when the showForm flag is true
-  &.show-form {
-    @include show-element;
-  }
+  //&.show-form {
+  //  @include show-element;
+  //}
 }
