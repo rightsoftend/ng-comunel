@@ -2,7 +2,8 @@
 .app-input {
   position: relative;
   margin-bottom: 1rem;
-
+  display: flex;
+  justify-content: center;
   // Styles for the input field
   input {
     width: 95%;
@@ -28,8 +29,8 @@
     position: absolute;
     top: -0.6rem; // Adjust top position of the label
     left: 0.8rem; // Adjust left position of the label
-    padding: 0 0.2rem;
-    background-color: #fff;
+    padding: 0 0.4rem 0.2rem 0.4rem;
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 0), rgba(249, 249, 249, 1), rgba(249, 249, 249, 0)); 
     color: #999;
     font-size: 0.9rem;
     transition: all 0.3s ease;
