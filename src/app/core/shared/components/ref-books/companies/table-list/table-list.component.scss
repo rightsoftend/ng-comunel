@@ -1,0 +1,27 @@
+// Define a mixin to hide an element
+@mixin hide-element {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+// Define a mixin to show an element
+@mixin show-element {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+//app-input-form {
+//  width: 100%;
+//}
+// Example usage: Hide the form by default
+.companies-list {
+  //@include hide-element;
+
+  // Show the form when the showForm flag is true
+  //&.show-form {
+  //  @include show-element;
+  //}
+
+}
