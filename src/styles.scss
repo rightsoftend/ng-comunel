@@ -69,3 +69,17 @@ button:active:after {
     width: 120px;
   }
 }
+
+.input-form-style {
+  width: 600px;
+}
+
+.order-list {
+  max-width: 1240px;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
