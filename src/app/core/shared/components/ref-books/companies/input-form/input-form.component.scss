@@ -12,9 +12,6 @@
   opacity: 1;
 }
 
-app-input-form {
-  width: 100%;
-}
 // Example usage: Hide the form by default
 .company-input-form {
   //@include hide-element;
@@ -23,4 +20,5 @@ app-input-form {
   //&.show-form {
   //  @include show-element;
   //}
+
 }

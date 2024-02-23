@@ -40,7 +40,7 @@ export class InputFormComponent {
     },
     phones: {
       groupTitle: 'Телефони',
-      label: 'Телефон',
+      label: '',
     },
     socialNetworks: {
       groupTitle: 'Соціальні мережі',
