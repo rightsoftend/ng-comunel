@@ -1,6 +1,8 @@
 <div class="app-group-input">
-  <label for="my-div">{{groupTitle}}</label>
-  <input class="group-inputs-add-button" type="button" value="+">
-  <app-input [caption]="elementTitle" />
-  <app-input [caption]="elementTitle" />
+  <div class="app-group-input_title">
+    <label for="my-div">{{groupTitle}}</label>
+    <input class="group-inputs-add-button" type="button" value="+">
+  </div>
+  <app-input class="flex-center" [caption]="elementTitle" />
+  <app-input class="flex-center" [caption]="elementTitle" />
 </div>
