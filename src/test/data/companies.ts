@@ -10,6 +10,7 @@ interface MetersDataReceiverService {
 }
 
 interface Company {
+  id: number;
   fullName: string;
   shortName: string;
   edrpou: string;
@@ -27,6 +28,7 @@ interface Company {
 // Export constant testCompaniesList as array of TestCompany  
 export const testCompaniesList: Company[] = [
   {
+    id: 1,
     fullName: 'ТОВ «ГАЗОПОСТАЧАЛЬНА КОМПАНІЯ «НАФТОГАЗ УКРАЇНИ»',
     shortName: 'НАФТОГАЗ',
     edrpou: '40121452',
@@ -57,6 +59,7 @@ export const testCompaniesList: Company[] = [
     ],
   },
   {
+    id: 2,
     fullName: 'ТОВ "ЕНЕРА СУМИ"',
     shortName: 'ЕНЕРА',
     edrpou: '41884537',
@@ -79,6 +82,7 @@ export const testCompaniesList: Company[] = [
     ],
   },
   {
+    id: 3,
     fullName: '',
     shortName: '',
     edrpou: '',
