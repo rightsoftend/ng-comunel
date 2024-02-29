@@ -1,4 +1,13 @@
-// Declare TestCompany interface
+interface MobApp {
+  name: string;
+  url: string;
+}
+
+interface SMS {
+  phone: string;
+  description: string;
+}
+
 interface ChatBot {
   name: string;
   url: string;
@@ -6,7 +15,7 @@ interface ChatBot {
 
 interface MetersDataReceiverService {
   url: string;
-  sms: string;
+  sms: SMS;
 }
 
 interface Company {
@@ -23,9 +32,9 @@ interface Company {
   transmissionOfMetersData: MetersDataReceiverService;
   socialNetworks: string[];
   chatBots: ChatBot[];
+  mobApps: MobApp[],
 }
 
-// Export constant testCompaniesList as array of TestCompany  
 export const testCompaniesList: Company[] = [
   {
     id: 1,
@@ -40,7 +49,10 @@ export const testCompaniesList: Company[] = [
     parlor: 'https://cutt.ly/L1eOeHx',
     transmissionOfMetersData:{
       url: 'https://s7478310.sendpul.se/sl/MzE2NzU4NTQ=/a3738d05480b3062ef47743d0e9e1ec043419s4',
-      sms: '4647',
+      sms: {
+        phone: '4647',
+        description: '',
+      },
     },
     socialNetworks: [
       'https://cutt.ly/41wZ7Fd', 
@@ -57,6 +69,12 @@ export const testCompaniesList: Company[] = [
         url: 'https://cutt.ly/x1wHNc1',
       },
     ],
+    mobApps: [
+      {
+        name: '',
+        url: '',
+      },
+    ],
   },
   {
     id: 2,
@@ -71,10 +89,19 @@ export const testCompaniesList: Company[] = [
     parlor: 'https://sm.e-svitlo.com.ua',
     transmissionOfMetersData: {
       url: '',
-      sms: '',
+      sms: {
+        phone: '',
+        description: '',
+      },
     },
     socialNetworks: [''],
     chatBots: [
+      {
+        name: '',
+        url: '',
+      },
+    ],
+    mobApps: [
       {
         name: '',
         url: '',
@@ -94,7 +121,10 @@ export const testCompaniesList: Company[] = [
     parlor: '',
     transmissionOfMetersData: {
       url: '',
-      sms: '',
+      sms: {
+        phone: '093 177 01 27',
+        description: 'Набрати текст згідно шаблону: 1*NNNNNNNNN*XXXXXX * - роздільник; 1- код послуги: передача показів лічильника; NNNNNNNNN - номер особового рахунку; XXXXXX - покази лічильника на момент відправки СМС',
+      },
     },
     socialNetworks: [''],
     chatBots: [
@@ -103,5 +133,20 @@ export const testCompaniesList: Company[] = [
         url: '',
       },
     ],
+    mobApps: [
+      {
+        name: 'E-Svitlo',
+        url: 'https://play.google.com/store/apps/details?id=com.soe.superbill&showAllReviews=true',
+      },
+      {
+        name: 'Мій рахунок (Android)',
+        url: 'https://play.google.com/store/apps/details?id=ua.soe.billing.android',
+      },
+      {
+        name: 'Мій рахунок (iPhone)',
+        url: 'https://apps.apple.com/ua/app/%D0%BC%D1%96%D0%B9-%D1%80%D0%B0%D1%85%D1%83%D0%BD%D0%BE%D0%BA/id1436142052',
+      },
+    ],
   },
 ];
+
